@@ -27,9 +27,9 @@
             <div class="popup-content">
                 <span class="close" onclick="closeLogPopup()">&times;</span>
                 <h2>Login</h2>
-                <form action="login.php" method="POST">
-                    <input type="text" name="nume" placeholder="Nume" required>
-                    <input type="password" name="parola" placeholder="Parola" required>
+                <form id="loginForm" method="POST">
+                    <input id="loginUsername" name="username1" type="text" placeholder="Nume">
+                    <input id="loginPass" name="password1" type="password" placeholder="Parola">
                     <input type="submit" value="Login">
                 </form>
             </div>
@@ -38,18 +38,14 @@
             <div class="popup-content">
                 <span class="close" onclick="closeInregPopup()">&times;</span>
                 <h2>Creare Cont</h2>
-                <form action="php/creareCont.php" method="POST">
-                    <input type="text" pattern="^[A-Za-z0-9]{8,}$" title="Minim 8 caractere" placeholder="Nume"
-                        required>
-                    <input type="password"
-                        pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[^@$!%*?&])[A-Za-z\d^@$!%*?&]{8,}$"
-                        title="Minim 8 caractere, 1 nr, 1 litera mare, 1 litera mica, 1 caracter special "
-                        placeholder="Parola" required>
+                <form id="inregForm" action="creareCont.php" method="POST">
+                    <input id="inregUsername" name="username2" type="text" placeholder="Nume" required>
+                    <input id="inregPass" name="password2" type="password" placeholder="Parola" required>
                     <input type="submit" value="Creaza">
                 </form>
             </div>
         </div>
     </header>
 </body>
-<script src="index.js"></script>
+
 </html>

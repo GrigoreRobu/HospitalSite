@@ -1,0 +1,5 @@
+{
+    "editor.inlineSuggest.suppressSuggestions": false,
+    "editor.screenReaderAnnounceInlineSuggestion": false,
+    "intelliphp.inlineSuggestionsEnabled": false
+}
