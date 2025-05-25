@@ -1,12 +1,18 @@
+html,
 body {
     background-color: #e6e4df;
     color: #756343;
     font-family: "Segoe UI";
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 nav {
-    margin-left: 4%;
-    margin-right: 4%;
+    display: flex;
+    justify-content: center;
+    margin: 15px 4%;
+    gap: 20px;
 }
 
 #logo {
@@ -14,18 +20,16 @@ nav {
 }
 
 .button-a {
-    display: inline-block;
-    text-align: center;
-    line-height: 40px; /* Aligns text vertically */
-    text-decoration: none; /* Removes underline */
-    color: black; /* Ensure readable text color */
-    
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
     border: 1px solid #c8b9a0;
-    padding: 0; /* buttons typically don’t need extra padding if line-height is set */
     background: linear-gradient(45deg, #dfc08b 2%, #fafafa 48%, #ffffff 49%, #dfc08b 97%);
     border-radius: 20px;
     height: 40px;
-    width: 16%;
+    padding: 0 80px;
     font-size: calc(0.8vw + 10px);
     cursor: pointer;
     box-sizing: border-box;
@@ -69,6 +73,10 @@ footer {
     background-color: #cab693;
 }
 
+#container {
+    min-height: 100vh;
+}
+
 .popup {
     visibility: hidden;
     position: fixed;
@@ -107,4 +115,129 @@ input {
     width: 80%;
     margin: 10px auto;
     padding: 8px;
+}
+
+.medici-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.medici-table th {
+    background: #c8b9a0;
+    color: white;
+    padding: 15px;
+    text-align: left;
+}
+
+.medici-table td {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.table-nume {
+    width: 20%;
+}
+
+.specializare {
+    color: #2c3e50;
+}
+
+.specializare h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.servicii-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.servicii-table th {
+    background: #c8b9a0;
+    color: white;
+    padding: 15px;
+    text-align: left;
+}
+
+.servicii-table td {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+#contact {
+    text-align: center;
+    justify-content: center;
+}
+
+.error-message {
+    color: red !important;
+}
+
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.admin-table th {
+    background-color: #c8b9a0;
+    color: #333;
+    text-align: left;
+    padding: 10px;
+}
+
+.admin-table td {
+    padding: 8px;
+    border-bottom: 1px solid #e6e4df;
+}
+
+.admin-table button {
+    padding: 4px 8px;
+    margin: 2px;
+    background-color: #c8b9a0;
+    border: 1px solid #b6a78e;
+    color: #333;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.add-form {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    gap: 10px;
+    font-family: Arial, sans-serif;
+}
+
+.add-form label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.add-form button {
+    padding: 6px 12px;
+    font-size: 14px;
+    height: 32px;
+}
+
+#log-out {
+    background-color: #c8b9a0;
+    border: 1px solid #b6a78e;
+    color: #333;
+    border-radius: 3px;
+    padding: 6px 12px;
+    font-size: 14px;
+    height: 32px;
+    text-decoration: none;
 }

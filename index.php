@@ -1,8 +1,5 @@
 <?php
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    header("Location: " . $_SERVER['PHP_SELF']);
-    exit();
-}
+
 ?>
 <!DOCTYPE html>
 <html lang="ro">
@@ -11,10 +8,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="image/png" href="img/favico.png">
     <title>Home - Clinica MedGrig</title>
 </head>
 
 <body>
+    <div id="logo">
+        <h1>Clinica MedGrig - Home</h1>
+    </div>
     <div id="container">
         <?php include 'inc/header.php'; ?>
         <div id="content">
